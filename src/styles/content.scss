@@ -1,6 +1,6 @@
-@use "./kit/fonts" as fonts;
-@use "./kit/mixins" as mixins;
-@use "./kit/colors" as colors;
+@use './kit/fonts' as fonts;
+@use './kit/mixins' as mixins;
+@use './kit/colors' as colors;
 
 .main {
   padding: 70px 0 80px;
@@ -40,7 +40,7 @@
 
     &__item {
       color: #171111;
-      font-family: "Source Sans Pro";
+      font-family: 'Source Sans Pro';
       font-size: 16px;
       font-style: normal;
       font-weight: 400;

@@ -1,6 +1,6 @@
-@use "./kit/fonts" as fonts;
-@use "./kit/mixins" as mixins;
-@use "./kit/colors" as colors;
+@use './kit/fonts' as fonts;
+@use './kit/mixins' as mixins;
+@use './kit/colors' as colors;
 
 .footer {
   background-color: #000;
@@ -15,7 +15,7 @@
       height: auto;
       p {
         color: rgba(255, 255, 255, 0.7);
-        font-family: "Source Sans Pro";
+        font-family: 'Source Sans Pro';
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -30,7 +30,7 @@
       h3 {
         text-align: center;
         color: #fff;
-        font-family: "Source Sans Pro";
+        font-family: 'Source Sans Pro';
         font-size: 18px;
         font-style: normal;
         font-weight: 400;

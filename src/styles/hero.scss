@@ -1,11 +1,11 @@
-@use "./kit/fonts" as fonts;
-@use "./kit/mixins" as mixins;
-@use "./kit/colors" as colors;
+@use './kit/fonts' as fonts;
+@use './kit/mixins' as mixins;
+@use './kit/colors' as colors;
 
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/header-bg.jpg");
+  background-image: url('../assets/header-bg.jpg');
   background-position: top center;
   background-size: cover;
   color: #fff;
@@ -41,7 +41,7 @@
     p {
       color: #fff;
       text-align: center;
-      font-family: "Source Sans Pro";
+      font-family: 'Source Sans Pro';
       font-size: 24px;
       font-style: normal;
       font-weight: 400;

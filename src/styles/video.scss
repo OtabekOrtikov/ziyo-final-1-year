@@ -1,10 +1,10 @@
-@use "./kit/fonts" as fonts;
-@use "./kit/mixins" as mixins;
-@use "./kit/colors" as colors;
+@use './kit/fonts' as fonts;
+@use './kit/mixins' as mixins;
+@use './kit/colors' as colors;
 
 .video {
   min-height: 60vh;
-  background-image: url("../assets/learn-bg.jpg");
+  background-image: url('../assets/learn-bg.jpg');
   background-position: center;
   background-size: cover;
   padding: 70px 0;
@@ -45,7 +45,7 @@
   p {
     color: #fff;
     text-align: center;
-    font-family: "Source Sans Pro";
+    font-family: 'Source Sans Pro';
     font-size: 24px;
     font-style: normal;
     font-weight: 400;

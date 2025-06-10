@@ -2,17 +2,19 @@
   "scripts": {
     "test": "jest --reporters=jest-junit",
     "build": "echo \"Dummy build script for Autocode\"",
-    "comp:watch": "sass --watch src/styles/styles.scss:src/dist/styles.css --no-source-map",
-    "compile": "sass src/styles/styles.scss:src/dist/styles.css --no-source-map",
-    "prefixer": "npx postcss src/dist/styles.css -o src/dist/styles.css --use autoprefixer",
-    "minifying": "postcss src/dist/styles.css -o src/dist/styles.min.css",
-    "remove-unused": "purgecss --css src/dist/styles.css --content src/index.html",
+    "comp:watch": "sass --watch src/styles/style.scss:src/dist/style.css --no-source-map",
+    "compile": "sass src/styles/style.scss:src/dist/style.css --no-source-map",
+    "prefixer": "npx postcss src/dist/style.css -o src/dist/style.css --use autoprefixer",
+    "minifying": "postcss src/dist/style.css -o src/dist/style.min.css",
+    "remove-unused": "purgecss --css src/dist/style.css --content src/index.html",
+    "prettier": "prettier --write src/styles/*.scss && prettier --write \"src/dist/style.css\"",
     "lint": "stylelint ./src/styles/*.scss --fix && stylelint ./src/styles/*.scss",
-    "prod": "npm run compile && npm run prefixer && npm run minifying && npm run remove-unused && npm run lint"
+    "prod": "npm run compile && npm run prefixer && npm run minifying && npm run prettier && npm run remove-unused && npm run lint"
   },
   "devDependencies": {
     "@babel/core": "^7.23.5",
     "@babel/preset-env": "^7.23.5",
+    "@fullhuman/postcss-purgecss": "^3.0.0",
     "autoprefixer": "^10.4.21",
     "cssnano": "^7.0.7",
     "html-validate": "^8.7.4",
@@ -22,10 +24,11 @@
     "parse-gitignore": "^2.0.0",
     "postcss": "^8.5.4",
     "postcss-cli": "^11.0.1",
+    "prettier": "^3.5.3",
     "purgecss": "^7.0.2",
-    "sass": "^1.89.2",
+    "sass": "^1.89.1",
     "stylelint": "^16.20.0",
-    "stylelint-config-standard": "^38.0.0"
+    "stylelint-config-recommended": "^16.0.0"
   },
   "jest-junit": {
     "suiteName": "junit test results",
