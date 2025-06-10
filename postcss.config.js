@@ -1,7 +1,6 @@
 module.exports = {
   plugins: [
-    require("autoprefixer")({
-      overrideBrowserslist: ["defaults"], // Targets all modern browsers
-    }),
+    require("autoprefixer"), // For prefixer script
+    require("cssnano")({ preset: "default" }), // For minifying script
   ],
 };
