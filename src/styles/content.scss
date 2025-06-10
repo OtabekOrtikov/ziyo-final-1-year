@@ -1,0 +1,75 @@
+@use "./kit/fonts" as fonts;
+@use "./kit/mixins" as mixins;
+@use "./kit/colors" as colors;
+
+.main {
+  padding: 70px 0 80px;
+  background-color: colors.$grey;
+  text-align: center;
+
+  &-title {
+    color: #4e494a;
+    text-align: center;
+    font-family: Notable;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 135.135% */
+    max-width: 770px;
+    width: 100%;
+    margin: 0 auto 45px;
+  }
+
+  &-subtitle {
+    color: #40403f;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 133.333% */
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto 56px;
+  }
+
+  &-content {
+    @include mixins.flex(row, center, flex-start);
+    flex-wrap: wrap;
+    gap: 50px;
+
+    &__item {
+      color: #171111;
+      font-family: "Source Sans Pro";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px; /* 137.5% */
+      width: 400px;
+      text-align: left;
+      margin-bottom: 50px;
+    }
+  }
+  &-read {
+    &__btn {
+      color: #fff;
+      text-align: center;
+      font-family: Oswald;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px; /* 185.714% */
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      border-radius: 18px;
+      background: #771533;
+      padding: 5px 18px;
+      transition: all 0.5s ease;
+      display: inline-block;
+      &:hover {
+        transform-origin: 35%;
+        transform: rotate(15deg);
+      }
+    }
+  }
+}

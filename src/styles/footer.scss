@@ -1,0 +1,53 @@
+@use "./kit/fonts" as fonts;
+@use "./kit/mixins" as mixins;
+@use "./kit/colors" as colors;
+
+.footer {
+  background-color: #000;
+  padding: 35px 0;
+  color: #fff;
+
+  &-content {
+    @include mixins.flex(row, space-between, flex-end);
+
+    &__item {
+      width: 240px;
+      height: auto;
+      p {
+        color: rgba(255, 255, 255, 0.7);
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19px; /* 118.75% */
+      }
+      img {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 22px;
+      }
+      h3 {
+        text-align: center;
+        color: #fff;
+        font-family: "Source Sans Pro";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; /* 88.889% */
+        letter-spacing: 3.6px;
+        text-transform: uppercase;
+      }
+
+      &:first-child {
+        p {
+          margin-top: 28px;
+
+          a:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
